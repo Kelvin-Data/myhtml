@@ -1,0 +1,680 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 80vh;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    color: #0B4619;
+    position: fixed;
+    height: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 64px;
+    font-size: 16px;
+    position: relative;
+    margin-top: 30px;
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-size: 1.7em;
+    letter-spacing: 1px;
+    font-family: 'Poppins';
+}
+
+/* Scroll to top button */
+
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    left: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #ff5360; 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 20px; 
+}
+  
+#myBtn:hover {
+    background-color: #555; 
+}
+
+/* Menu */
+
+header .navigation a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing:  1px;
+    padding: 2px 15px;
+    transition: 0.3s;
+    transition-property: background;
+    font-size: 23px;
+    color: #0B4619;
+    border-radius: 20px;
+}
+
+header .navigation  a:not(:last-child) {
+    margin-right: 30px;
+}
+
+header .navigation  a:hover {
+    background: #ff5360;
+    color: #fff;
+}
+
+header label {
+    display: none;
+}
+
+#check {
+    z-index: 3;
+    display: none;
+}
+
+
+/* Who are we */
+
+.main {
+    flex: 1;
+    display: flex;
+    align-items: center;  
+    padding-left: 30px;
+}
+
+
+.right img {
+    width: 100%;
+}
+
+.left {
+    max-width: 45%;
+    padding: 34px 50px;
+    left: 30px;
+}
+
+.main .left .title, .msg {
+    text-align: left;
+}
+
+.right {
+    padding: 20px 34px;
+}
+
+.title {
+    color: #ff5360;
+    font-size: 3.2em;
+    width: 50%;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 48px;
+}
+
+.msg {
+    color: #000;
+    font-size: 22px;
+    letter-spacing: 0.7px;
+    line-height: 32px;
+    margin-bottom: 48px;
+}
+
+button.cta {
+    border: none;
+    outline: none;
+    background-color: #ff5360;
+    color: #fff;
+    padding: 18px 32px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition: opacity 0.9;
+    font-size: 20px;
+}
+
+.cta  a:link, a:visited {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+}
+
+button.cta:hover {
+    opacity: 0.9;
+}
+
+/* Who we are */
+
+.container-fluid {
+    padding-left: 60px;
+    background-color: #0B4619;
+    color: #fff;
+    text-align: left;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    padding: 100px 50px;
+}
+
+.container-fluid h2, h4{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.container-fluid p {
+    letter-spacing: 0.7px;
+    line-height: 32px;
+    margin-top: 30px;
+}
+
+/* What we offer  */
+
+.w3-container {
+    background: #EAEAEA;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.grid-container {
+    display: grid;
+    height: 630px;
+    grid-template-columns: 30% 30% 30%;
+    padding-top: 5px;
+    background: #EAEAEA;  
+    margin-left: 100px;  
+}
+
+.grid-container>div {
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 2px;
+    text-align: center;
+    font-family: poppin;
+    padding-top: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 20px 20px;
+    background: #fff;
+    padding: 30px 20px;
+    width: 380px;
+}
+
+.grid-container .column-left {
+    padding-top: 56px;
+}
+
+.grid-container .column-right h3 {
+    padding-top: 0px;
+}
+
+.grid-container .column-right img {
+    padding-top: 25px;
+}
+
+.grid-container>div p {
+    text-align: left;
+}
+
+.w3-container h2 {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+}
+
+#a {
+    text-align: left;
+}
+
+#web {
+    width: 50px;
+    height: 50px;
+    margin-top: 35px;
+    margin-left: 8px;
+}
+
+#app {
+    width: 50px;
+    height: 50px;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+#mobile {
+    width: 50px;
+    height: 70px;
+    margin-top: 15px;
+    margin-left: 8px;
+}
+
+/* Why choose us */
+
+#wcu {
+    padding-top: 30px;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.left img {
+    width: 100%;
+}
+
+.right {
+    width: 100%;
+    margin-right: 25px;
+}
+
+.accordion-button:last-child {
+    color: #0B4619;
+    background-color: #fff;
+}
+
+.accordion-body {
+    background-color: #EAEAEA;
+}
+
+.left {
+    padding: 20px 34px;
+    max-width: 55%;
+}
+
+.accordion-body p {
+    text-align: left;
+}
+
+
+/* Contact */
+
+#main2 {
+    background-color:#0B4619;
+    color: #fff;
+    padding: 30px 30px;
+}
+
+.column-left {
+    width: 90%;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.container {
+    background: #fff;
+    width: 450px;
+    max-width: 800px;
+    padding: 25px 40px 10px 40px;
+    box-shadow: 0px 0px 10px rbga(0,0,0,0.1);
+}
+    
+.container .text {
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    background: #0B4619;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container form {
+    padding: 30px 0 0 0 0;
+}
+
+.container form .form-row {
+    display: flex;
+    margin: 32px 0;
+}
+
+form .form-row .input-data {
+    width: 100%;
+    height: 40px;
+    margin: 0 20px;
+    position: relative;
+}
+
+form .form-row .textarea {
+    height: 70px;
+}
+
+.input-data input,
+.textarea textarea {
+    display: block;
+    height:  100%;
+    width: 100%;
+    border: none;
+    font-size: 17px;
+    border-bottom: 2px solid rgba(0,0,0,0.12);
+    outline: none;
+}
+
+.input-data label {
+    position: absolute;
+    bottom: 10px;
+    font-size: 16px;
+    pointer-events: none;
+    color: #000;
+    outline: none;
+}
+
+.input-data input:focus ~ label, 
+.textarea textarea:focus ~ label,
+.input-data input:valid ~ label, 
+.textarea textarea:valid ~ label {
+    transform: translateY(-20px);
+    color: #000;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    border: none;
+    outline: none;
+}
+
+.textarea textarea {
+    resize: none;
+    padding-top: 10px;
+}
+
+.textarea label {
+    width: 100%;
+    bottom: 40px;
+    background-color: #fff;
+}
+
+.input-data .underline {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;  
+}
+
+.input-data .underline:before,
+.input-data .underline:after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color:#0B4619;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.input-data input:focus ~ .underline:before, .underline:after,
+.textarea textarea:focus ~ .underline:before, .underline:after,
+.input-data input:valid ~ .underline:before, .underline:after, 
+.textarea textarea:valid ~ .underline:before, .underline:after {
+    transform: scaleX(1);
+}
+
+
+.submit-btn .input-data {
+    height: 45px!important;
+    width: 25%!important;
+    overflow: hidden;
+}
+
+.submit-btn .input-data .inner {
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    background: #0B4619;
+    transition: all 0.3s;
+    color: #fff;
+}
+
+.submit-btn .input-data:hover .inner {
+    left : 0;
+}
+
+.submit-btn .input-data input {
+    position: relative;
+    z-index: 2;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+#contact_3 h2 {
+    text-align: left;
+    padding-bottom: 10px;
+    margin-top: 20px;
+
+}
+
+#contact_3 p {
+    background: #0B4619;
+    color: #fff;
+    text-align: left;
+}
+
+#contact_3 .i p {
+    font-size: 15px;
+}
+
+p {
+    text-align: center;
+}
+
+/* -------RESPONSIVENESS ------ */
+
+@media (max-width:500px) {
+    header,
+    .left,
+    .right {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+    
+@media (max-width: 500px) {
+/* Cover */
+
+    .main {
+        flex-direction: column;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left {
+        font-size: 0.8em
+    }
+
+    .left * {
+        width: 100%;
+        margin-bottom: 32px;
+        text-align: center;
+        margin-right: 45px;
+        
+    }
+
+   .main .left .title {
+        text-align: center;
+    }
+
+    button.cta {
+        max-width: 100%;
+        height: 50px;
+        padding: 10px 10px;
+    }
+
+    a:link, a:visited {
+        text-decoration: none;
+        display: inline-block;
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .right img {
+        width: 100%;
+    }
+
+/* Logo */
+
+    header .logo {
+        padding-top: 28px;
+    }  
+
+/* Nav menu responsiveness */
+
+    header .navigation {
+        display: none;
+    }
+
+    header label {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+        transition: 0.3s;
+        transition-property: color;
+    }
+
+    label:hover {
+        color: #fff;
+    }
+
+    label .close-btn {
+        display: none;
+    }
+
+    #check:checked~header .navigation {
+        z-index: 2;
+        position: fixed;
+        background: white;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #ff5360;
+    }
+
+    #check:checked~header .navigation a {
+        font-weight: 700;
+        margin-right: 0;
+        margin-bottom: 50px;
+        letter-spacing: 2px;   
+    }
+
+    #check:checked~header label .menu-btn {
+        display: none;
+    }
+
+    #check:checked~header label .close-btn {
+        z-index: 2;
+        display: block;
+        position: fixed;
+    }
+
+    label .menu-btn {
+        position: absolute;
+    }
+
+/* What we offer */
+
+    .grid-container {
+        grid-template-columns: 60%;
+        height: 2100px;
+        margin-left: 5px;
+        padding-bottom: 50px;
+    }
+
+    .grid-container>div {
+        padding: 30px 30px;
+        margin: 10px 10px;
+    }
+
+    .grid-container .column-left,
+    .grid-container .column-center,
+    .grid-container .column-right {
+        width: 350px;
+    }
+
+/* Why choose us */
+
+    .accordion-body p {
+        text-align: left;
+    }
+
+    .accordion-example {
+        right: 30px;
+    }
+
+    #wcu {
+        margin-top: 50px;
+    }
+
+/* contact */
+    
+    .container .text {
+        font-size: 30px;
+    }
+
+    .container form{
+        padding: 10px 0 0 0 0;
+        align-items: center;   
+        width: 100%;
+    }
+
+    .container form .form-row {
+        display: block;
+    }
+
+    form .form-row .input-data{
+        margin: 15px 0!important;
+    }
+
+    .submit-btn .input-data {
+        width: 40%!important;
+    }
+
+    #contact_3 {
+        padding: 10px 20px;
+    }
+
+    #contact_4 {
+        width: 100%;
+        padding-left: 5px;
+    }
+}
